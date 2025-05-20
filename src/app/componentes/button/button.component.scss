@@ -1,0 +1,15 @@
+app-button{
+  .button-model{
+    border-radius: 5px;
+    width: 115px;
+    height: 30px;
+    color: white;
+    background-color: #70B3EF;
+    border: 2px solid #3274AE;
+
+    &:hover{
+      background-color: #3274AE;
+      cursor: pointer;
+    }
+  }
+}
