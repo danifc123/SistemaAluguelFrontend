@@ -1,12 +1,22 @@
 import { Routes } from '@angular/router';
 import { LayoutAuthComponent } from './layouts/layout-auth/layout-auth.component';
+import { RegisterComponent } from './models/register/register.component';
+import { AuthComponent } from './models/auth/auth.component';
 
 export const routes: Routes = [
-{
-  path:"",
-  component: LayoutAuthComponent
-},
-{
-path:"cadastro",
-},
-{}];
+  {
+    path:"auth",
+    title: "Jenisson Luckwu Imóveis - Autenticação",
+    component:LayoutAuthComponent,
+    children:[
+      {
+        path:"",
+        component:AuthComponent,
+      },
+      {
+        path:"register",
+        component:RegisterComponent,
+      }
+    ]
+  },
+];

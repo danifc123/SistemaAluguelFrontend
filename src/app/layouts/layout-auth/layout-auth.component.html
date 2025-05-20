@@ -1,25 +1,15 @@
 <div class="auth-layout">
-
   <div class="auth-content">
     <div>
       <img class="auth-logo" src="/logo/LogoLogin.svg" alt="Jenisson Lucku Imóveis">
     </div>
 
-    <div class="auth-inputs">
-      <app-input type="email" label="Email"></app-input>
-      <app-input type="password" label="Password"></app-input>
-
-      <div class="auth-links">
-        <a routerLink="/cadastro">Cadastrar</a>
-        <a routerLink="/esqueci-senha">Esqueceu a senha?</a>
-      </div>
-
-      <app-button></app-button>
+    <div class="router-box">
+      <router-outlet/>
     </div>
 
   </div>
   <div class="image-container">
     <img class="auth-image" src="/homem/garotopropaganda.svg" alt="">
   </div>
-
 </div>

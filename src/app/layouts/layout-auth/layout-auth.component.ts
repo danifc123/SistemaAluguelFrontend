@@ -1,10 +1,9 @@
 import { Component, viewChild, ViewEncapsulation } from '@angular/core';
-import { InputComponent } from "../../componentes/input/input.component";
-import { ButtonComponent } from "../../componentes/button/button.component";
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-layout-auth',
-  imports: [InputComponent, ButtonComponent],
+  imports: [RouterOutlet],
   templateUrl: './layout-auth.component.html',
   styleUrl: './layout-auth.component.scss',
   encapsulation:  ViewEncapsulation.None,
