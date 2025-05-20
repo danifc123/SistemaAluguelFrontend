@@ -1,0 +1,26 @@
+app-layout-auth{
+  .auth-layout{
+    display: flex;
+    width: 100%;
+  }
+  .auth-content{
+    background-color: #629FD5;
+    height: 100vh;
+    width: 55%;
+    border-radius: 0px 15px 15px 0px;
+    text-align: center;
+  }
+.auth-logo{
+  margin-top: 75px;
+}
+.image-container{
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.auth-image{
+  max-width:100%;
+  height: auto;
+}
+}
