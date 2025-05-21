@@ -3,7 +3,7 @@ import { InputComponent } from "../../componentes/input/input.component";
 
 @Component({
   selector: 'app-dashboard',
-  imports: [InputComponent],
+  imports: [],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
 })
