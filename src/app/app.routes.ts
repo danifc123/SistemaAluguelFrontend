@@ -5,7 +5,7 @@ import { AuthComponent } from './models/auth/auth.component';
 
 export const routes: Routes = [
   {
-    path:"auth",
+    path:"",
     title: "Jenisson Luckwu Imóveis - Autenticação",
     component:LayoutAuthComponent,
     children:[
