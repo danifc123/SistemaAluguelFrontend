@@ -1,0 +1,18 @@
+app-menu{
+.menu-content{
+  display: flex;
+  background-color: #1D466B;
+  width: 100%;
+  max-width: 412px;
+  height: 100vh;
+}
+
+ul{
+  color: white;
+list-style: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+}
