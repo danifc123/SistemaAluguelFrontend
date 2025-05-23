@@ -1,12 +1,25 @@
+.dashboard-content{
+  height: 100vh;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+}
 .dashboard-logo-content{
   background-color: #629FD5;
   display: flex;
   align-items: center;
   padding: 10px 20px;
   gap: 10px;
+
 }
 .material-symbols-outlined{
   color: white;
   display: flex;
   cursor: pointer;
+}
+.content-area{
+  display: flex;
+}
+.appmenu{
+ width: 300px;
 }
