@@ -5,6 +5,7 @@ import { AuthComponent } from './models/auth/auth.component';
 import { ForgetPasswordComponent } from './models/forget-password/forget-password.component';
 import { LayoutDefaultComponent } from './layouts/layout-default/layout-default.component';
 import { ContractComponent } from './models/contract/contract.component';
+import { InvoicingComponent } from './models/invoicing/invoicing.component';
 
 export const routes: Routes = [
   {
@@ -31,9 +32,12 @@ export const routes: Routes = [
     title:"Jenisson Luckwu Imóveis",
     component: LayoutDefaultComponent,
     children:[{
-        path:"",
+        path:"contract",
         component: ContractComponent,
-
+    },
+    {
+      path:"invoicing",
+      component: InvoicingComponent
     }]
   }
 ];
