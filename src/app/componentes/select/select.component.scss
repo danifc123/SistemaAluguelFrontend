@@ -1,0 +1,25 @@
+.select-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.select-input{
+  background-color: #D9D9D9;
+  border-radius: 5px;
+  width: 300px;
+  height: 30px;
+  outline: none;
+  border: 2px solid #82BEF3;
+  &:focus{
+    background-color: white;
+  }
+}
+.select-content{
+  height: 300px;
+  width: 300px;
+  background-color: #82BEF3; //cor final #D9D9D9;
+  border-radius: 5px;
+  position: absolute;
+  top: 40px;
+}
