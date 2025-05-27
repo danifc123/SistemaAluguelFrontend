@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Usuario } from '../../interface/usuario.model';
+
 
 @Component({
   selector: 'app-select',
@@ -10,12 +12,14 @@ export class SelectComponent {
 
   //#region Variaveis
 
-usuarios = [
-  {id:1, nome: "daniel faria"},
-  {id:2, nome: "Camylla varell"}
-];
+  usuarios: Usuario[] = [
+    { id: 1, nome: 'daniel faria' },
+    { id: 2, nome: 'Camylla varell' }
+  ];
+
+  usuarioSelecionado: Usuario | null = null;
+
 mostrarOpcoes = false
-usuarioSelecionado = null;
 
 //#endregion
 //#region Metodos
@@ -24,8 +28,8 @@ usuarioSelecionado = null;
 trocarOpcoes() {
   this.mostrarOpcoes = !this.mostrarOpcoes;
 }
-selecionarUsuario(usuarios: any){
-this.usuarioSelecionado = usuarios;
+selecionarUsuario(usuario: any){
+this.usuarioSelecionado = usuario;
 this.mostrarOpcoes = false;
 }
 //#endregion
