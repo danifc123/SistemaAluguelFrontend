@@ -1,5 +1,6 @@
+
 <div class="select-container">
-  <input (click)="trocarOpcoes()" [value]="usuarioSelecionado" class="select-input" type="text">
+  <input (click)="trocarOpcoes()" [value]="usuarioSelecionado?.nome || ''" class="select-input" type="text">
   @if(mostrarOpcoes){
   <div class="select-content">
   @for (usuario of usuarios; track $index) {
