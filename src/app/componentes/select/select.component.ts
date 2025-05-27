@@ -7,18 +7,20 @@ import { Component } from '@angular/core';
   styleUrl: './select.component.scss'
 })
 export class SelectComponent {
-//#region Variaveis
-usuarios = [
-  {id:1, nome: "daniel faria"}
-];
 
+  //#region Variaveis
+
+usuarios = [
+  {id:1, nome: "daniel faria"},
+  {id:2, nome: "Camylla varell"}
+];
 mostrarOpcoes = false
 usuarioSelecionado = null;
 
 //#endregion
-
 //#region Metodos
 //tem retorno funçao
+
 trocarOpcoes() {
   this.mostrarOpcoes = !this.mostrarOpcoes;
 }

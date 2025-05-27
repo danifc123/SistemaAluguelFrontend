@@ -4,6 +4,14 @@
   align-items: center;
   position: relative;
 }
+.select-content{
+  height: 300px;
+  width: 300px;
+  background-color: #82BEF3; //cor final #D9D9D9;
+  border-radius: 5px;
+  position: absolute;
+  top: 40px;
+}
 .select-input{
   background-color: #D9D9D9;
   border-radius: 5px;
@@ -14,12 +22,4 @@
   &:focus{
     background-color: white;
   }
-}
-.select-content{
-  height: 300px;
-  width: 300px;
-  background-color: #82BEF3; //cor final #D9D9D9;
-  border-radius: 5px;
-  position: absolute;
-  top: 40px;
 }
