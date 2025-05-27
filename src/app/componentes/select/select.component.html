@@ -4,7 +4,7 @@
   @if(mostrarOpcoes){
   <div class="select-content">
   @for (usuario of usuarios; track $index) {
-    <p (click)="selecionarUsuario(usuario)">{{usuario.nome}}</p>
+    <p class="select-name"(click)="selecionarUsuario(usuario)">{{usuario.nome}}</p>
   }
 </div>
 }
