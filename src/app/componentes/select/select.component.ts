@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Usuario } from '../../interface/usuario.model';
+import { Component,ElementRef, HostListener } from '@angular/core';
+import { inquilinos } from '../../interface/inquilinos.model';
 
 
 @Component({
@@ -12,25 +12,37 @@ export class SelectComponent {
 
   //#region Variaveis
 
-  usuarios: Usuario[] = [
-    { id: 1, nome: 'daniel faria' },
-    { id: 2, nome: 'Camylla varell' }
+  usuarios: inquilinos[] = [
+    { id: 1, nome: 'Daniel Faria' },
+    { id: 2, nome: 'Camylla Varella' }
   ];
 
-  usuarioSelecionado: Usuario | null = null;
+  usuarioSelecionado: inquilinos | null = null;
 
 mostrarOpcoes = false
-
 //#endregion
-//#region Metodos
-//tem retorno funçao
 
+//#region
+constructor(private elementRef: ElementRef) {}
+//#endregion
+
+//#region Metodos
+@HostListener('document:click',['$event.target'])
+quandoClicar(elementoAlvo:HTMLElement){
+const clicandoDentro =this.elementRef.nativeElement.contains(elementoAlvo);
+
+if(!clicandoDentro){
+  this.mostrarOpcoes = false;
+    }
+  }
+//tem retorno funçao
 trocarOpcoes() {
   this.mostrarOpcoes = !this.mostrarOpcoes;
 }
-selecionarUsuario(usuario: any){
-this.usuarioSelecionado = usuario;
+selecionarUsuario(inquilinos: any){
+this.usuarioSelecionado = inquilinos;
 this.mostrarOpcoes = false;
-}
+  }
 //#endregion
+
 }
