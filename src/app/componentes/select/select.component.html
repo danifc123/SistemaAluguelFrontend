@@ -1,4 +1,6 @@
 <div class="select-container">
-  <input class="select-input" type="text">
+  <input (click)="trocarOpcoes()" class="select-input" type="text">
+  @if(mostrarOpcoes){
   <div class="select-content"></div>
+}
 </div>
