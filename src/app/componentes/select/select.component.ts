@@ -19,30 +19,29 @@ export class SelectComponent {
 
   usuarioSelecionado: inquilinos | null = null;
 
-mostrarOpcoes = false
-//#endregion
+  mostrarOpcoes = false
+  //#endregion
 
-//#region
-constructor(private elementRef: ElementRef) {}
-//#endregion
+  //#region
+  constructor(private elementRef: ElementRef) {}
+  //#endregion
 
-//#region Metodos
-@HostListener('document:click',['$event.target'])
-quandoClicar(elementoAlvo:HTMLElement){
-const clicandoDentro =this.elementRef.nativeElement.contains(elementoAlvo);
+  //#region Metodos
+  @HostListener('document:click',['$event.target'])
+  quandoClicar(elementoAlvo:HTMLElement){
+    const clicandoDentro =this.elementRef.nativeElement.contains(elementoAlvo);
 
-if(!clicandoDentro){
-  this.mostrarOpcoes = false;
+    if(!clicandoDentro){
+      this.mostrarOpcoes = false;
     }
   }
-//tem retorno funçao
-trocarOpcoes() {
-  this.mostrarOpcoes = !this.mostrarOpcoes;
-}
-selecionarUsuario(inquilinos: any){
-this.usuarioSelecionado = inquilinos;
-this.mostrarOpcoes = false;
+  //tem retorno funçao
+  trocarOpcoes() {
+    this.mostrarOpcoes = !this.mostrarOpcoes;
   }
-//#endregion
-
+  selecionarUsuario(inquilinos: any){
+    this.usuarioSelecionado = inquilinos;
+    this.mostrarOpcoes = false;
+  }
+  //#endregion
 }
